@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title %} Colaboradores {% endblock %} {%
+block content %}
+
+<h2 class="text-center mb-4">Lista de Colaboradores</h2>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Día de trabajo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for colaborador in colaboradores %}
+
+      <tr>
+        <td>{{ colaborador.nombre }}</td>
+        <td>{{ colaborador.apellido }}</td>
+        <td>{{ colaborador.edad }}</td>
+        <td>{{ colaborador.dia }}</td>
+      </tr>
+
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}
