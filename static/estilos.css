@@ -1,0 +1,115 @@
+/* Fondo general */
+body {
+  background-color: #f4f1de;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #304d4e !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+  color: #e9c8c8 !important;
+}
+
+/* TÍTULOS */
+h1,
+h2,
+h3 {
+  color: #304d4e;
+  font-weight: bold;
+}
+
+/* FORMULARIO */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Etiquetas */
+.form-label {
+  color: #304d4e;
+  font-weight: bold;
+}
+
+/* Inputs y select */
+.form-control,
+.form-select {
+  border: 1px solid #a7c4bc;
+  border-radius: 8px;
+}
+
+/* Efecto cuando se selecciona un input */
+.form-control:focus,
+.form-select:focus {
+  border-color: #304d4e;
+  box-shadow: 0 0 0 0.2rem rgba(48, 77, 78, 0.2);
+}
+
+/* BOTÓN GUARDAR */
+.btn-primary {
+  background-color: #304d4e;
+  border-color: #304d4e;
+}
+
+.btn-primary:hover {
+  background-color: #a7c4bc;
+  border-color: #a7c4bc;
+  color: #304d4e;
+}
+
+/* TABLAS */
+.table {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-dark {
+  --bs-table-bg: #304d4e;
+  --bs-table-color: #ffffff;
+}
+
+/* Filas alternadas */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-bg-type: #eef4f1;
+}
+
+/* FOOTER */
+footer {
+  background-color: #304d4e !important;
+  margin-top: 40px;
+}
+
+/* Para que el footer quede abajo si hay poco contenido */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
